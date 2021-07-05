@@ -17,7 +17,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <a href="https://uottawa.brightspace.com/d2l/le/content/111681/viewContent/2255389/View">Where We left off...</a>
+        <a id="Resume" href="https://uottawa.brightspace.com/d2l/le/content/111681/viewContent/2255389/View">Where We left off...</a>
         <h1>Tutorial 01</h1>
 
         <h3>CSS Box Model</h3>
@@ -59,8 +59,73 @@
         <a href="https://www.w3schools.com"> a tag defines a hyperlink </a>
         <span>span is like div (wrapper) but for inline elements</span>
 
-        <script src="" async defer>
-            var text = 'Hello'
+        <hr>
+        <a href="https://uottawa.brightspace.com/d2l/le/content/111681/viewContent/2255389/View">
+            <h1>Tutorial 02 - JavaScript</h1>
+        </a>
+        <h2>Ternary Operator</h2>
+        <div>var c = 10 > 5? 10 : 5; // value of c would be 10</div>
+
+        <hr>
+        <h2>JavaScript Objects</h2>
+        <span class="titleExample">Object Literal</span>
+        <br><br><span class="ex">var person = { firstName: "James", lastName: "Bond"</span>
+
+        <table class="ex" style="margin-top: 6px;">
+            <tr>
+                <td class="titleExample">person.firstName;</td>
+                <td>accesses class variable</td>
+            </tr>
+            <tr>
+                <td class="titleExample">person.["firstName"];</td>
+                <td>accesses class variable</td>
+            </tr>
+            <tr>
+                <td style="padding-right: 6px;" class="titleExample">person.eyeColour = "green";</td>
+                <td>assigns value to new class variable</td>
+            </tr>
+        </table>
+
+        <br><br><span class="titleExample">Object Constructor</span>
+        <br><span class="ex">var person = new Object();</span>
+        <br>
+        <span class="ex">
+            person.getFullName = function () {return this.firstName + ' ' + this.lastName;};
+        </span>
+        
+        <hr>
+        <h2>JavaScript Arrays</h2>
+        <span>var <array-name> = [element0, element1, element2,... elementN];</span>
+
+        <hr>
+        <h2>JavaScript Functions and Loops</h2>
+        <br><span>see more in pdf</span>
+
+        <hr>
+        <h2>DOM Manipulation</h2>
+        <span>
+            var link = document.querySelector('a'); 
+            <br>Stores a reference of an element found by querySelector.ID, Class,...
+        </span>
+
+        <h2>Useful JavaScript Ressources</h2>
+        <a href="https://www.w3schools.com/js/">W3 Schools JS</a>
+
+<!-- CSS & JS -->
+        <style>
+            .ex{ margin-left: 10px; }
+            .titleExample{ font-weight: bold; }
+        </style>
+        <script>
+            var text = 'Hello';
+            var house = { Country: "value1", City: "value2", Street: "value3" };
+            
+            var link = document.querySelector('#Resume');
+            link.textContent = 'Current Tutorial Lecture';
+            
         </script>
+
     </body>
+
+
 </html>
