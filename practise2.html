@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SEG3125</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+            
+            <a href="https://uottawa.brightspace.com/d2l/le/content/111681/viewContent/2257576/View">
+                Continue Tutorial on Page 5
+            </a>
+            <h1 style="text-align: center;">JQuery Tutorial</h1><hr>
+            
+            <button style="margin-bottom: 20px;margin-left: 20px;">Triggers JQuery's text change</button>
+            
+            <br><span id="test" class="indent">This text should be replaced by a JQuery command in script</span>
+            
+            <h2>DOM Manupulation</h2>
+            <h3>JQuery Syntax is as follows...</h3>
+            <blockquote>$(selector).action()</blockquote>
+            <h3>Retrieving information from DOM</h3>
+            <blockquote>$("select#foo").val();</blockquote>
+            <h3>Change one of the attributes of an element</h3>
+            <blockquote>$("p").addClass("myClass yourClass");</blockquote>
+            <h3>Set an element's style properties</h3>
+            <blockquote>$(".article").css("color", "#333");</blockquote>
+            <h3>Inserting, copying, removing</h3>
+            <blockquote id="insert"></blockquote>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">1</div>
+                    <div class="col">1</div>
+                    <div class="col">1</div>
+                </div>
+            </div>
+
+            <!--<div class="container-fluid">
+                <h2>BootStrap Container</h2>
+                <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Bootstrap-part-2.png" alt="BootStrap Grid System">
+                <img src="https://bootstrapcreative.com/wp-bc/wp-content/uploads/2016/11/Screen-Shot-2016-11-22-at-5.18.43-AM.png" alt="More BootStrap Grid System">
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h3>Sunflower</h3>
+                        <span>Information on Sunflower and a picture to the right</span>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="">
+                    </div>
+                </div>
+            </div>-->
+
+        <style>
+            .indent{ margin-left: 20px;}
+            
+        </style>
+
+        <script>
+            $(document).ready(function()
+            {
+                var txt1 = 'This text should be replaced by a JQuery command in script';
+                var txt2 = 'boo';
+
+                // jQuery methods go here...
+                $('button').click(function(){
+                    //Toggling between txt1 and txt2 using tenary operator
+                    $('#test').text()===txt1 ? $('#test').text(txt2) : $('#test').text(txt1);
+
+                });
+
+                $('#insert').text('$(".article").append("<p>Test</p>");');
+
+            });
+
+        </script>
+    </body>
+</html>
