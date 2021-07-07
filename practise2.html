@@ -10,8 +10,10 @@
         <title>SEG3125</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -39,18 +41,11 @@
             <h3>Inserting, copying, removing</h3>
             <blockquote id="insert"></blockquote>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">1</div>
-                    <div class="col">1</div>
-                    <div class="col">1</div>
-                </div>
-            </div>
-
-            <!--<div class="container-fluid">
+            <br><hr>
+            <div class="container-fluid">
                 <h2>BootStrap Container</h2>
-                <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Bootstrap-part-2.png" alt="BootStrap Grid System">
-                <img src="https://bootstrapcreative.com/wp-bc/wp-content/uploads/2016/11/Screen-Shot-2016-11-22-at-5.18.43-AM.png" alt="More BootStrap Grid System">
+                <img class="img-responsive" src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Bootstrap-part-2.png" alt="BootStrap Grid System">
+                <img class="img-responsive" src="https://bootstrapcreative.com/wp-bc/wp-content/uploads/2016/11/Screen-Shot-2016-11-22-at-5.18.43-AM.png" alt="More BootStrap Grid System">
             </div>
 
             <div class="container-fluid">
@@ -60,14 +55,29 @@
                         <span>Information on Sunflower and a picture to the right</span>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="">
+                        <img class="img-responsive" src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="">
                     </div>
                 </div>
-            </div>-->
+            </div>
 
         <style>
             .indent{ margin-left: 20px;}
-            
+            blockquote{
+                background: #f4f4f4;
+                border: 1px solid #ddd;
+                border-left: 3px solid #f36d33;
+                color: #666;
+                page-break-inside: avoid;
+                font-family: monospace;
+                font-size: 15px;
+                line-height: 1.6;
+                margin-bottom: 1.6em;
+                max-width: 100%;
+                overflow: auto;
+                padding: 1em 1.5em;
+                display: block;
+                word-wrap: break-word;
+            }
         </style>
 
         <script>
